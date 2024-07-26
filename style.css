@@ -1,0 +1,89 @@
+body{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.head_line{
+    /* position: relative; */
+    height: 80vh;
+    text-align: center;
+    color: rgb(229, 229, 243);
+    background-image: url("./assets/college_website_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+
+.highlights{
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition-duration: 1s;
+}
+.highlights ul{
+    list-style-type: none;
+}
+.h1{
+    font-weight: 900;
+    background-color: rgba(135, 207, 235, 0.393);
+    
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.head_line img{
+    z-index: 2;
+}
+
+.footer_section{
+    background-color: rgb(230, 188, 92);
+    height: 20vh;
+    border: solid whitesmoke;
+    border-top: 0.5rem;
+    margin: 0.5rem  0rem 0rem 0rem;
+    border-radius: 1rem;
+    padding: 1rem 5rem;
+}
+
+.highlights:hover{
+    background-color: rgba(153, 205, 50, 0.266);
+    height: 7rem;
+    width: 40rem;
+    margin: 0 auto;
+    color: black;
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .footer_section{
+        height: 25vh;
+    }
+}
+
+@media (max-width: 592px) {
+    .head_line{
+        height: 90vh;
+    }
+    .footer_section{
+        height: 30vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .head_line{
+        height: 100vh;
+    }
+    .footer_section{
+        height: 40vh;
+    }
+}

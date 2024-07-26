@@ -1,0 +1,59 @@
+body{
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+    margin-top: 5rem;
+    background-image: url("./assets/college_website_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-weight: 700;
+}
+.cards{
+     background-color:rgba(255, 166, 0, 0.504); /*rgb(85, 117, 213);rgb(31, 82, 238); */
+    border-radius: 1rem;
+    width: 50%;
+    margin: 0.7rem auto;
+    padding: 1rem 2rem;
+    color: white;
+    transition-duration: 0.5s;
+}
+.cards:hover{
+    transform: scale(1.1);
+    box-shadow: 0.3rem 0.3rem 0.6rem 0.3rem gray;
+    background-color: rgba(255, 166, 0, 0.719);
+}
+.white-box{
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem white;
+}
+
+@media (max-width: 900px) {
+    .cards{
+        width: 60%;
+    }
+}
+@media (max-width: 700px) {
+    .cards{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .cards{
+        width: 80%;
+    }
+}
